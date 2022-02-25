@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
 type Props = {
-  title: string;
+  title: string
 }
 
 export default function Home({ title = 'React Avançado!' }: Props) {
@@ -16,9 +16,7 @@ export default function Home({ title = 'React Avançado!' }: Props) {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          {title}
-        </h1>
+        <h1 className={styles.title}>{title}</h1>
 
         <p className={styles.description}>
           Get started by editing{' '}
