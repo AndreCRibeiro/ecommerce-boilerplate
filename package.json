@@ -12,16 +12,16 @@
     "test:watch": "yarn test --watch",
     "prepare": "husky install"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "src/**/*": [
       "yarn lint --fix",
       "yarn test --bail"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "next": "12.1.0",
