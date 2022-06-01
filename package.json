@@ -10,7 +10,7 @@
     "postinstall": "husky install",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "commit": "next lint --fix --max-warnings=0 && yarn test --bail"
+    "prepare": "husky install"
   },
   "husky": {
     "hooks": {
