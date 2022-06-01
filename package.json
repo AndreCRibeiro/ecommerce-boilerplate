@@ -6,10 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix --max-warnings=0",
+    "lint": "next lint --fix --max-warnings=0 && yarn test --bail",
     "postinstall": "husky install",
     "test": "jest",
-    "test:watch": "yarn test --watch"
+    "test:watch": "yarn test --watch",
+    "commit": "next lint --fix --max-warnings=0 && yarn test --bail"
   },
   "husky": {
     "hooks": {
@@ -18,7 +19,7 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix",
+      "yarn lint",
       "yarn test --bail"
     ]
   },
