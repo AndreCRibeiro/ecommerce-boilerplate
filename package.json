@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint --fix --max-warnings=0 && yarn test --bail",
+    "lint": "next lint --fix --max-warnings=0",
     "postinstall": "husky install",
     "test": "jest",
     "test:watch": "yarn test --watch",
